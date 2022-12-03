@@ -15,3 +15,19 @@ We use a Bernoulli distribution to model pv(x | z) because we are using the bina
 ![image](https://user-images.githubusercontent.com/38180831/205464311-14ece9e1-a9c5-439d-a167-31de1c233ef6.png)
 
 The auto-encoder is trained using the re-parametrization trick for computing the gradient of the u and standard back-prop for computing the gradient of the log pv(x | z).
+
+## Results
+#### Plot of the first and second term of ELBO as a function of number of weight updates:
+![image](https://user-images.githubusercontent.com/38180831/205464385-f68cada1-7f76-48e3-b7df-e4ae4da4a6b8.png)
+
+#### Plot of the output of the VAE side-by-side with the input image on training set:
+![image](https://user-images.githubusercontent.com/38180831/205464432-b13e9801-5806-4a0c-9aff-12cc11a501bd.png)
+
+#### Plot of the output of the VAE side-by-side with the input image on validation set:
+![image](https://user-images.githubusercontent.com/38180831/205464457-7b27cc52-7dba-4325-84e5-c23efecc8005.png)
+
+#### Outputs after synthesizing MNIST images from a Standard Gaussian Distribution:
+![image](https://user-images.githubusercontent.com/38180831/205464494-c42ff4db-efe3-4e4f-bdcb-6e7bde77f081.png)
+
+#### Plot comparing the reconstruction log likelihood term in ELBO on Training vs Validation set
+![image](https://user-images.githubusercontent.com/38180831/205464515-01b07b52-efdb-452b-80a6-ce9965e8eac9.png)
