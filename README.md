@@ -15,6 +15,10 @@ We use a Bernoulli distribution to model pv(x | z) because we are using the bina
 
 The auto-encoder is trained using the re-parametrization trick for computing the gradient of the u and standard back-prop for computing the gradient of the log pv(x | z).
 
+## Run the code
+1. Open the file [VAE_Digit_Recognition.ipynb](https://github.com/williamcfrancis/Variational-Autoencoder-for-MNIST/blob/main/VAE_Digit_Recognition.ipynb) in Google Colab, Jupyter Notebook or other code editor that supports ipynb files.
+2. Run the cells sequentially
+
 ## Results
 We achieved impressive results with our VAE, as demonstrated by the following plots:
 #### Plot of the first and second term of ELBO as a function of number of weight updates:
