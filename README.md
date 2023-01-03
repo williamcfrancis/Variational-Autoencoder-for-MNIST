@@ -1,4 +1,4 @@
-## VAE for MNIST: Generating High-Quality Digits with a Variational Autoencoder
+## VAE for MNIST
 In this project, we trained a variational autoencoder (VAE) for generating MNIST digits. VAEs are a powerful type of generative model that can learn to represent and generate data by encoding it into a latent space and decoding it back into the original space. For a detailed explanation of VAEs, see [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114) by Kingma & Welling.
 
 ### Architecture 
