@@ -1,4 +1,4 @@
-## Variational Autoencoder for MNIST
+## VAE for MNIST: Generating High-Quality Digits with a Variational Autoencoder
 In this project, I trained a variational auto-encoder for generating MNIST digits. 
 To learn about variational autoencoders, please refer to [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114) by Kingma & Welling.
 
