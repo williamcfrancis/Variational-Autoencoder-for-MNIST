@@ -16,6 +16,7 @@ We use a Bernoulli distribution to model pv(x | z) because we are using the bina
 The auto-encoder is trained using the re-parametrization trick for computing the gradient of the u and standard back-prop for computing the gradient of the log pv(x | z).
 
 ## Results
+We achieved impressive results with our VAE, as demonstrated by the following plots:
 #### Plot of the first and second term of ELBO as a function of number of weight updates:
 ![image](https://user-images.githubusercontent.com/38180831/205464385-f68cada1-7f76-48e3-b7df-e4ae4da4a6b8.png)
 
