@@ -7,10 +7,10 @@ The encoder consists of two fully-connected layers, the first has 14×14 = 196 i
 Let the parameters of the encoder be u and the parameters of the decoder be v. We maximize the objective
 ![image](https://user-images.githubusercontent.com/38180831/205464260-d2b5d371-5418-44ee-8a78-85890174bacb.png)
 
-We are modeling pu(z | x) as a Gaussian distribution and the neural network predicts the mean µu(x) of the distribution and the diagonal of the covariance σu(x). The KL-divergence is:
+We model pu(z | x) as a Gaussian distribution, and the neural network predicts the mean µu(x) and the diagonal of the covariance σu(x). The KL-divergence is calculated using the following equation:
  ![image](https://user-images.githubusercontent.com/38180831/205464297-1ddc9aea-b133-4ff2-a5da-be4fc979cee5.png)
 
-We use a Bernoulli distribution to model pv(x | z) because we are using the binarized MNIST dataset
+We use a Bernoulli distribution to model pv(x | z) because we are using the binarized MNIST dataset, with the following equation:
 ![image](https://user-images.githubusercontent.com/38180831/205464311-14ece9e1-a9c5-439d-a167-31de1c233ef6.png)
 
 The auto-encoder is trained using the re-parametrization trick for computing the gradient of the u and standard back-prop for computing the gradient of the log pv(x | z).
